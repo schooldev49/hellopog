@@ -141,12 +141,8 @@ text-align: center;
    list-style: none;
      margin-left: 50px;
   color: #fffafa;
-  background: #687182;
     border-radius: 50px;
-   box-shadow: 0 1px 2px #1a1414, 
-                  0 2px 4px #1a1414, 
-                  0 4px 8px #1a1414,
-     0 8px 16px #1a1414;
+  
 }
 a:hover{
     background:#dd404028;
