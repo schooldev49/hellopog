@@ -179,3 +179,21 @@ a:hover{
          background-color: #141c8a;
      overflow: auto; 
 }
+.testanim {
+  position: relative;
+}
+.testanim:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #5340b5;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out scale(1.05);
+}
+.testanim:hover:before {
+  visibility: visible;
+  width: 100%;
+}
