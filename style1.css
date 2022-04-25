@@ -181,6 +181,8 @@ a:hover{
 }
 .testanim {
   position: relative;
+  background-color: transparent;
+  background: transparent;
 }
 .testanim:before{
   content: "";
@@ -189,9 +191,9 @@ a:hover{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #5340b5;
+  background-color: #1d1ace;
   visibility: hidden;
-  transition: all 0.3s ease-in-out scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 .testanim:hover:before {
   visibility: visible;
