@@ -63,7 +63,7 @@ width: 100%;
     
   }
   .form-group {
-    background:linear-gradient(to top,#cccccc,#cccccc) repeat-x center;
+    background: #2dab2b;
     background-size:2px 2px;
     min-width:50px;
     
