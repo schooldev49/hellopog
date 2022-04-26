@@ -6587,7 +6587,8 @@ html.has-navbar-fixed-bottom {
 }
 
 .navbar-menu {
-	display: none
+	display: none;
+	
 }
 
 .navbar-item,

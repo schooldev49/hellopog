@@ -13,6 +13,10 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       />
+      
+      <script src="prisim.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+          <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
     
 
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/tsparticles@1.39.2/tsparticles.min.js" integrity="sha256-FCz5ToEA27payrGYaVGRidiIA+68Z31TBXFzcIT1/gU=" crossorigin="anonymous"></script>
@@ -30,15 +34,17 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <link rel="stylesheet" href="style1.css">
         <link rel="stylesheet" href="sh.css">
+        <link rel="stylesheet" href="prisim.css">
+
   </head>
   <body>
 
 
-    <header class="card-header">
+    <header class="card-header"data-aos="fade-down"    data-aos-easing="linear"     data-aos-duration="700">
         <p class="card-header-title">
            simplydeveloper
         </p>
-        <div id="ididyourmother" class="navbar-menu"data-aos="fade-down"    data-aos-easing="linear"     data-aos-duration="700">
+        <div id="ididyourmother" class="navbar-menu">
           <div class="navbar-start">
             <a class="navbar-item" id="active">
               Home
@@ -193,7 +199,10 @@ crossorigin="anonymous"></script>
            function ok(){
           var typed = new Typed("#typehere", {
     strings: [
-      "protected static void aboutMe() {<hr style='border: 1px dotted green;border-radius: 5px;'>System.out.println('^700hello! im a coder and here i post a bunch of random projects and stuff that i made. i code in frontend html/css/js, nodejs, c++, c#, java, python, typescript, .NET, rust, blender, lua, and brainfuck. currently learning react, SQL, and assembly.')}"
+      /*"<pre class='command-line'>^50000",*/
+      "Streamreader rfile = new StreamReader('about.java'); <br>Console.WriteLine(rfile);^1000",
+      `protected static void aboutMe() {<br>System.out.println('^700hi there! im a coder and here i post a bunch of random projects and stuff that i made. ')}<hr style='border: 1px dotted green;border-radius: 5px;'>protected static void programmingLanguages() {<br>System.out.programmingLanguages = [Java.Array] <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style='width: 5%; height: 5%;'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" style='width: 5%; height: 5%;'><br>)}`
+
     ],
     typeSpeed: 75,
     backDelay: 200,

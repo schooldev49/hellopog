@@ -180,6 +180,9 @@ a:hover{
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
   z-index: 1;
 }
+.typed-cursor {
+  font-size: 15px;
+}
 
 .pre {font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px;    border-radius: 50px;
     border-top-left-radius: 2px 2px;
