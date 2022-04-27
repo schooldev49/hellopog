@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
     --nord0: #2e3440;
     --nord0m2: #323946;
@@ -57,6 +60,7 @@
    height: 100%;
 width: 100%;
   z-index: -1;
+
   /* Center and scale the image nicely */
    /* Center and scale the image nicely */
 
@@ -154,14 +158,17 @@ color: rgb(0, 255, 0);
   text-align: center;
    list-style: none;
      margin-left: 50px;
-  color: #fffafa;
+  color: #29CB39;
     border-radius: 50px;
+    text-shadow: 0px 3px rgba(7, 97, 22, 0.5);
+    text-align: center;
   
 }
 a:hover{
     background:#dd404028;
-    /*border: 2px solid var(--nord8);*/
-  
+    border: 2px solid var(--nord8);
+    box-shadow: 0 0 17px -1px rgba(57, 72, 235, 0.65);
+
   
 }
 .hrcolori {
@@ -200,6 +207,7 @@ a:hover{
   position: relative;
   background-color: transparent;
   background: transparent;
+  border-radius: 30px;
 }
 .testanim:before{
   content: "";
@@ -221,3 +229,86 @@ a:hover{
   width: 100%;
 
 }
+.testtoo{
+  position: relative;
+  left: 0;
+}
+.testtoo:before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  box-shadow: 0 0 17px 5px rgba(57, 72, 235, 0.65);
+  bottom: 0;
+  background-color: #00bc8c;
+  visibility: visible;
+
+  align-self: center;
+
+}
+.ee {
+  overflow-anchor: none;
+  width: 100%;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  list-style: none;
+}
+
+.project1{
+ margin-bottom: 2%;
+ cursor: default;
+ position: relative;
+ transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+ cursor: pointer;
+}
+.project1:hover{
+  transform: scale(0.96,0.96) rotate(-2deg) perspective(100px);	
+  transition: 0.3s;
+
+}
+.projectpog {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border: 2px solid rgba(30, 224, 224, 0.5);
+  box-shadow: 0 0 17px 5px rgba(57, 72, 235, 0.65);
+  height: 100%;
+  position: relative; 
+  border-radius: 1.375rem;
+  align-items: flex-start;
+  padding: 2rem 1.75rem;
+}
+.projectname {
+  margin: 1rem 0px;
+  overflow-wrap: anywhere;
+  color: #29CB39;
+  font-size: 2.2rem;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+}
+
+header{
+  width: 100%;
+}
+.image {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.detaile{
+  min-width: 100%;
+  margin-bottom: 1rem;
+  color: #29CB39;
+  font-size: 1.5rem;
+}
+/*
+ 
+  
+*/

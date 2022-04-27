@@ -5808,10 +5808,12 @@ print {
 }
 
 .navbar {
-	background-color: #fff;
+	background-color: #000000b6;
 	min-height: 3.25rem;
 	position: relative;
-	z-index: 30
+	z-index: 30;
+	text-align: center;
+	align-items: center;
 }
 
 .navbar.is-white {
@@ -6538,11 +6540,13 @@ html.has-navbar-fixed-bottom {
 .navbar-burger {
 	color: #4a4a4a;
 	cursor: pointer;
-	display: block;
+	display: inline-block;
 	height: 3.25rem;
 	position: relative;
 	width: 3.25rem;
-	margin-left: auto
+	margin-left: auto;
+	justify-content: flex-start;
+
 }
 
 .navbar-burger span {
@@ -6708,7 +6712,9 @@ a.navbar-item:hover {
 		display: none
 	}
 	.navbar-menu {
-		background-color: #fff;
+		background-color: #6bc4d7;
+		
+		justify-content: flex-start;
 		box-shadow: 0 8px 16px rgba(10, 10, 10, .1);
 		padding: .5rem 0
 	}
@@ -6793,7 +6799,7 @@ a.navbar-item:hover {
 		color: #3273dc
 	}
 	.navbar-burger {
-		display: none
+		display: none;
 	}
 	.navbar-item,
 	.navbar-link {
