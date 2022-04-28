@@ -49,6 +49,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    cursor: url("cursorpog.png") 16 16 , auto;
 
   }body {
     width:  auto;
@@ -171,6 +172,7 @@ a:hover{
 
   
 }
+
 .hrcolori {
   width: 100%;
   height: 2px;
