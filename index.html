@@ -13,6 +13,10 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       />
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
       
       <script src="prisim.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
@@ -88,13 +92,8 @@ align-items: center;
  overflow: auto; ">
       <p class="card-header-title has-text-white">simplydeveloper#3013</p>
       <a class="navdrop" style="height: min-content; color: rgb(0, 255, 0); z-index: 99; position: fixed; right: calc(2rem);">
-        <svg viewBox="0 0 100 80" width="40" height="40" onclick="
-          if (document.getElementById('settingsMenu').style.display == 'none'){
-           var contextMenu2 = document.getElementById('settingsMenu').style.display = 'block'
-            
-          } else {
-            document.getElementById('settingsMenu').style.display = 'none'
-          }" class="okri" style="color: white;">
+        <svg viewBox="0 0 100 80" width="40" height="40"
+     " class="okri" style="color: white;">
           <rect width="100" height="10" style="fill:rgb(0, 255, 0)"></rect>
           <rect y="30" width="100" height="10"style="fill:rgb(0, 255, 0)"></rect>
           <rect y="60" width="100" height="10"style="fill:rgb(0, 255, 0)"></rect>
@@ -102,7 +101,7 @@ align-items: center;
       </a>
 </div>
 <div id="settingsMenu" class="context-menu" style="display: none;
-position: absolute;right:0; width: 200px; height: auto; z-index: 69420; transition: 0.5s; box-shadow: 0 0 20px 0 rgba(3, 1, 1, 0.616); background: #000000b6;">
+position: absolute;right:0; width: 200px; height: auto; z-index: 69420; transition: ease 0.5s; box-shadow: 0 0 20px 0 rgba(16, 59, 202, 0.918) inset; background: #000000b6; border-radius: 15px; padding: 15px 12px auto; ">
     <ul style="list-style: none; padding: 5px 0px 5px 0px;">
 
       
@@ -153,7 +152,9 @@ position: absolute;right:0; width: 200px; height: auto; z-index: 69420; transiti
   <br>
   <ul class="ee">
   <div class="project1">
-    <div class="projectpog">
+    <div class="projectpog" style="word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word; text-align: center;">
       <header>
         <div class="image">
           <img src="https://i.gyazo.com/9037c641ca9b796384c75d4ef5ab1317.png" style="">
@@ -284,6 +285,53 @@ position: absolute;right:0; width: 200px; height: auto; z-index: 69420; transiti
    setTimeout(3500,ok())
 
    </script>
-    
+    <script>
+         var contextMenu2 = document.getElementById('settingsMenu');
+         var er = document.querySelector('.navdrop');
+         er.onclick=eq;
+         var siopen = false
+        var cooldown = false;
+        const animateCSS = (element, animation, prefix = 'animate__') =>
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove(`${prefix}animated`, animationName);
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+  });
+         function eq(){
+
+
+          if (siopen == false){
+            contextMenu2.style.display = 'block';
+            siopen = true
+            animateCSS('.context-menu','bounceInRight').then((message) => {
+console.log(message)
+animateCSS('.context-menu','swing');
+            })
+          
+            
+          } else {
+            animateCSS('.context-menu','bounceOutRight').then((message) => {
+console.log(message)
+        
+              contextMenu2.style.display = 'none';
+           
+
+              siopen = false
+            })
+         
+          }
+        }
+    </script>
   </body>
 </html>
